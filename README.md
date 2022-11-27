@@ -1,36 +1,18 @@
+# RDP Windows Server 2019 ✨
 
+**Windows Server 2019 with 2cpu-7gb Ram FREE with Github with RDP Access (ngrok US)**
 
-## Free RDP 6 HOURS
++ Click Fork in the right corner of the screen to save it to your Github.
++ Visit https://dashboard.ngrok.com to get NGROK_AUTH_TOKEN
++ In Github go to **⚙ Settings> Secrets> New repository secret**
++ In Name: enter **NGROK_AUTH_TOKEN**
++ In Value: visit https://dashboard.ngrok.com/auth/your-authtoken Copy and Paste Your Authtoken into
++ Press **Add secret**
++ Go to **Action> NetSlutter> Run workflow**
++ Reload the page and press **NetSlutter> build**
++ Press the down arrow on Connect To Your RPD to get IP, User, Password.
 
-it's all free, don't be stingy ⭐️ yes: D
+## Warning
 
-### HOW TO CREATE netslutter-RDP
-```
-> Press the Fork button to create RDP (For Android / HP Users, Please Use Desktop Mode).
-
-> visit https://dashboard.ngrok.com to get NGROK_AUTH_TOKEN
-
-> Inside this Repo Go to Settings> Secrets> New repository secret
-
-> Fill in the Name: Enter NGROK_AUTH_TOKEN
-
-> Fill in Value: Visit https://dashboard.ngrok.com/auth/your-authtoken Copy and Paste in the value
-
-> Press Add secret 
-
-> Go to Action> CI> Run workflow
-
-> Refresh Web and go to CI> build
-
-> Press Down facing arrow button "RDP INFO LOGIN" To Get IP, User, Password.
-```
-## If Error Showed
-
-Just Download This Whole repository And make new repo in your GitHub account and upload all the files
-### WARN
-
-THIS IS ONLY FOR EDUCATIONAL PURPOSES
-
-DON'T USE FOR MINING OR ILLEGAL USE
-
-DON'T RECODE THIS SC!.
+This is only for educational purposes,
+don't use it for mining or anything illegal because you accept the consequences!
