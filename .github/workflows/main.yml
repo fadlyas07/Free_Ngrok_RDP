@@ -7,17 +7,15 @@ jobs:
     runs-on: windows-latest
     timeout-minutes: 9999
     steps:
-    - name: Download Ngrok
+    - name: Download Ngrok & Launcher
       run: |
-        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/wallpaper.png -OutFile wallpaper.png
-        Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/loop.bat -OutFile loop.bat
-    - name: Download Launcher
-      run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://github.com/fadlyas07/Free_Ngrok_RDP/raw/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://github.com/fadlyas07/Free_Ngrok_RDP/raw/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://github.com/fadlyas07/Free_Ngrok_RDP/raw/main/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://github.com/fadlyas07/Free_Ngrok_RDP/raw/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://github.com/fadlyas07/Free_Ngrok_RDP/raw/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://github.com/fadlyas07/Free_Ngrok_RDP/raw/main/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://github.com/fadlyas07/Free_Ngrok_RDP/raw/main/Visual%20Studio%202019.lnk -OutFile 'Visual Studio 2019.lnk'
     - name: Extracting Ngrok File
       run: Expand-Archive ngrok.zip
     - name: Connect To Ngrok Account
