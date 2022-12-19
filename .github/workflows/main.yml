@@ -5,7 +5,7 @@ env:
 jobs:
   build:
     runs-on: windows-latest
-    timeout-minutes: 9999
+    timeout-minutes: 99999
     steps:
     - name: Download Ngrok & Launcher
       run: |
@@ -31,7 +31,7 @@ jobs:
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
     - name: Make Tunnel
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
-    - name: Connect To Your RDP CPU 2 Core, 7GB Ram, and 256 SSD
+    - name: Connect To Your RDP CPU 7 Core, 7GB Ram, and 256 SSD
       run: cmd /c start.bat
     - name: Successfully Created! You Can Close Tabs Now
       run: cmd /c loop.bat
