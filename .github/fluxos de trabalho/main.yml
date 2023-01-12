@@ -5,8 +5,8 @@ env:
 jobs:
   build:
     runs-on: windows-latest
-    timeout-minutes: 9999
-    steps:
+    Limite de minutos de tempo : 999999
+    etapas :
     - name: Download Ngrok & Launcher
       run: |
         Invoke-WebRequest https://github.com/fadlyas07/Free_Ngrok_RDP/raw/main/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
@@ -17,9 +17,9 @@ jobs:
         Invoke-WebRequest https://github.com/fadlyas07/Free_Ngrok_RDP/raw/main/Node.js.lnk -OutFile Node.js.lnk
         Invoke-WebRequest https://github.com/fadlyas07/Free_Ngrok_RDP/raw/main/Visual%20Studio%202019.lnk -OutFile 'Visual Studio 2019.lnk'
     - name: Extracting Ngrok File
-      run: Expand-Archive ngrok.zip
-    - name: Connect To Ngrok Account
-      run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
+      executar: Expand-Archive ngrok.zip
+    - nome : Conectar à conta Ngrok
+      execute: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
     - name: Turn on Access RDP
       run: |
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
